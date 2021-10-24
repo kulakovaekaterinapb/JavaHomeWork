@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Bingo {
     public static void main(String[] args) {
         System.out.print("Привет!Угадай число от 0 до 100: ");
-        System.out.println("Для выхода из программы введите - exit.");
+        System.out.println("Для выхода из программы введите - 0000.");
 
 
         Scanner scan = new Scanner(System.in);
@@ -26,7 +26,10 @@ public class Bingo {
             number = scan.nextInt();
 
 
-            if (number < 0 || number > 100) {
+            if (number==0000) {
+                System.out.println("Пока");
+                break;
+            }else if (number < 0 || number > 100) {
                 System.out.println("Число не входит в диапазон");
                 continue;
             }  else if (number == x) {

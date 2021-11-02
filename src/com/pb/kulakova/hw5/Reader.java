@@ -102,7 +102,7 @@ public class Reader {
                 "fio='" + fio + '\'' +
                 ", number=" + number +
                 ", faculty='" + faculty + '\'' +
-                ", dob='" + birthday + '\'' +
+                ", birthday='" + birthday + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
     }

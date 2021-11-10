@@ -1,47 +1,35 @@
 package com.pb.kulakova.hw5;
 
 public class Book {
-    public static String Book(String[] args) {
-        String name;
-        String author;
-        String yearBook;
+    private String bookTitle;
+    private String bookAuthor;
+    private int bookYear;
 
-        public Book(String name, String author, String yearBook) {
-            this.name = name;
-            this.author = author;
-            this.yearBook = yearBook;
-        }
+    public Book(String bookTitle, String bookAuthor, int bookYear) {
+        this.bookTitle = bookTitle;
+        this.bookAuthor = bookAuthor;
+        this.bookYear = bookYear;
+    }
 
-            public String getName (String name) {
-            return name;
-        }
+    public String getBookTitle() {
+        return bookTitle;
+    }
 
-        public void setName (String name){
-            this.name = name;
-        }
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
 
-        public String getAuthor (String author) {
-            return author;
-        }
+    public int getBookYear() {
+        return bookYear;
+    }
 
-        public void setAuthor (String author){
-            this.author = author;
-        }
-        public void getYearBook (String yearBook){
-            return yearBook;
-        }
-        public void setYearBook (String yearBook){
-            this.yearBook = yearBook;
-        }
-
-
-        public String getInfo () {
-            return "{" +
-                    "name='" + name + '\'' +
-                    ", author='" + author + '\'' +
-                    "yearBook=" + '}';
-        }
+    public String getBookInfo() {
+        return "Title: " + bookTitle + ", Author: " + bookAuthor + ", Year: "
+                + bookYear;
     }
 }
+
+
+
 
 

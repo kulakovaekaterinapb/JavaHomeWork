@@ -1,8 +1,9 @@
 package com.pb.kulakova.hw6;
 
+
 import java.lang.reflect.Constructor;
 
-public class VetСlinic {
+public class VetClinic {
     public static void main(String[] args) throws Exception {
 
         Dog dog = new Dog("Dog", "meat", "aviary");
@@ -24,5 +25,4 @@ public class VetСlinic {
             }
         }
     }
-
 }
